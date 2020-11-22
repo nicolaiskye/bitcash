@@ -432,7 +432,7 @@ class PrivateKey(BaseKey):
         return PrivateKey(ECPrivateKey.from_int(num))
 
     def __repr__(self):
-        return '<PrivateKey: {}>'.format(self.address)
+        return f'<PrivateKey: {self.address}>'
 
 
 class PrivateKeyTestnet(PrivateKey):
@@ -496,7 +496,7 @@ class PrivateKeyTestnet(PrivateKey):
         return PrivateKeyTestnet(ECPrivateKey.from_int(num))
 
     def __repr__(self):
-        return '<PrivateKeyTestnet: {}>'.format(self.address)
+        return f'<PrivateKeyTestnet: {self.address}>'
 
 
 class PrivateKeyRegtest(PrivateKey):
@@ -560,7 +560,7 @@ class PrivateKeyRegtest(PrivateKey):
         return PrivateKeyRegtest(ECPrivateKey.from_int(num))
 
     def __repr__(self):
-        return '<PrivateKeyRegtest: {}>'.format(self.address)
+        return f'<PrivateKeyRegtest: {self.address}>'
 
 
 Key = PrivateKey

@@ -240,7 +240,7 @@ class TestPrivateKeyTestnet:
         time.sleep(3)  # give some time to the indexer to update the balance
         current = private_key.get_balance()
 
-        logging.debug('Current: {}, Initial: {}'.format(current, initial))
+        logging.debug(f'Current: {current}, Initial: {initial}')
         assert current < initial
 
     @pytest.mark.skip
@@ -255,7 +255,7 @@ class TestPrivateKeyTestnet:
         time.sleep(3)  # give some time to the indexer to update the balance
         current = private_key.get_balance()
 
-        logging.debug('Current: {}, Initial: {}'.format(current, initial))
+        logging.debug(f'Current: {current}, Initial: {initial}')
         assert current < initial
 
     def test_send_pay2sh(self):
@@ -347,7 +347,7 @@ class TestPrivateKeyRegtest:
         time.sleep(3)  # give some time to the indexer to update the balance
         current = private_key.get_balance()
 
-        logging.debug('Current: {}, Initial: {}'.format(current, initial))
+        logging.debug(f'Current: {current}, Initial: {initial}')
         assert current < initial
 
     @pytest.mark.regtest
@@ -367,7 +367,7 @@ class TestPrivateKeyRegtest:
         time.sleep(3)  # give some time to the indexer to update the balance
         current = private_key.get_balance()
 
-        logging.debug('Current: {}, Initial: {}'.format(current, initial))
+        logging.debug(f'Current: {current}, Initial: {initial}')
         assert current < initial
 
     @pytest.mark.regtest
