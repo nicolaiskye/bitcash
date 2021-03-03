@@ -7,6 +7,7 @@ from bitcash.utils import (
     hex_to_int,
     int_to_hex,
     int_to_unknown_bytes,
+    int_to_varint,
 )
 
 BIG_INT = 123456789 ** 5

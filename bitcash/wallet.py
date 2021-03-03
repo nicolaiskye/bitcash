@@ -23,7 +23,9 @@ from bitcash.transaction import (
     OP_PUSH_20,
 )
 
+
 NETWORKS = {"main": "mainnet", "test": "testnet", "regtest": "regtest"}
+DEFAULT_FEE = 1
 
 
 def wif_to_key(wif, regtest=False):
